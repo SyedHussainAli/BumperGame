@@ -224,7 +224,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 457181595}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 105355ae5918c1c4395b81b7ded23f42, type: 3}
   m_Name: 
@@ -349,6 +349,7 @@ GameObject:
   - component: {fileID: 1211419928}
   - component: {fileID: 1211419927}
   - component: {fileID: 1211419926}
+  - component: {fileID: 1211419929}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -421,6 +422,25 @@ Transform:
   m_Father: {fileID: 457181597}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+--- !u!114 &1211419929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211419925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5154c4edfbd3c914397d73262f2ad605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Targets:
+  - {fileID: 1652010161}
+  Offset: {x: 0, y: 5, z: -10}
+  SmoothTime: 0.05
+  MinZoom: 10
+  MaXZoom: 40
+  ZoomLimiter: 50
 --- !u!1001 &1403545340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -558,6 +578,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1652010161 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4703292720789224077, guid: 65e20fc91f41fdb4e931e6b54ca21dd2, type: 3}
+  m_PrefabInstance: {fileID: 4703292719209240124}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4703292719209240124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -565,30 +590,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1652010163, guid: 65e20fc91f41fdb4e931e6b54ca21dd2, type: 3}
-      propertyPath: m_MainTexture.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1652010163, guid: 65e20fc91f41fdb4e931e6b54ca21dd2, type: 3}
-      propertyPath: m_MainTexture.Array.data[0]
-      value: 
-      objectReference: {fileID: 2800000, guid: 1432e62c10501d147a873c128326f711, type: 3}
-    - target: {fileID: 1652010163, guid: 65e20fc91f41fdb4e931e6b54ca21dd2, type: 3}
-      propertyPath: m_MainTexture.Array.data[1]
-      value: 
-      objectReference: {fileID: 2800000, guid: 1d12fa396a3563b41b9ae11b0fb0b986, type: 3}
-    - target: {fileID: 1652010163, guid: 65e20fc91f41fdb4e931e6b54ca21dd2, type: 3}
-      propertyPath: m_MainTexture.Array.data[2]
-      value: 
-      objectReference: {fileID: 2800000, guid: 7789f4efbb0f45c4780925243375a18e, type: 3}
-    - target: {fileID: 1652010163, guid: 65e20fc91f41fdb4e931e6b54ca21dd2, type: 3}
-      propertyPath: m_MainTexture.Array.data[3]
-      value: 
-      objectReference: {fileID: 2800000, guid: bbc54c0e722a346408cd09eef6dc0cd6, type: 3}
-    - target: {fileID: 1652010163, guid: 65e20fc91f41fdb4e931e6b54ca21dd2, type: 3}
-      propertyPath: m_MainTexture.Array.data[4]
-      value: 
-      objectReference: {fileID: 2800000, guid: 6b38ffdcc39b96042a822bb3f490eefd, type: 3}
     - target: {fileID: 4703292720789224077, guid: 65e20fc91f41fdb4e931e6b54ca21dd2, type: 3}
       propertyPath: m_RootOrder
       value: 4
